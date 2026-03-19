@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Taxi Słubice - Taksówka Slubice 24h - Tanie TAXI, Taxi Świecko A2</title>
+  <meta name="description"
+    content="Szybkie Taxi w Słubicach i Świecku. Transfery Berlin BER. Pomoc drogowa A2 (odpalanie 12/24V). Płatność kartą i Euro. Zadzwoń: 739159969." />
+  <meta name="keywords"
+    content="taxi słubice, taksówka słubice, taxi świecko, taxi Frankfurt Oder, transfer BER, airport taxi, pomoc drogowa A2, odpalanie z kabli" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Taxi Słubice 24H" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Taxi Słubice 24H – Taksówka na Granicy" />
+  <meta property="og:description"
+    content="Szybkie Taxi w Słubicach i Świecku. Transfery Berlin BER. Pomoc drogowa A2. Zadzwoń: +48739159969" />
+  <meta property="og:image" content="banner.jpg" />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --yellow: #FFCC00;
+      --yellow-dark: #e6b800;
+      --black: #0a0a0a;
+      --black-soft: #1a1a1a;
+      --white: #ffffff;
+      --gray: #f5f5f5;
+      --text-muted: #555;
+      --radius: 14px;
+      --transition: 0.25s ease;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      background: var(--black);
+      color: var(--white);
+      line-height: 1.65;
+    }
+
+    /* ─── TOP BAR ─── */
+    .topbar {
+      background: var(--yellow);
+      color: var(--black);
+      text-align: center;
+      padding: 10px 20px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      letter-spacing: 0.03em;
+    }
+
+    .topbar a {
+      color: var(--black);
+      text-decoration: none;
+      font-weight: 900;
+    }
+
+    /* ─── HEADER ─── */
+    header {
+      position: relative;
+      min-height: 520px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      overflow: hidden;
+      padding-bottom: 0;
+    }
+
+    .header-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('baner.jpg');
+      background-size: cover;
+      background-position: center bottom;
+      z-index: 0;
+    }
+
+    .header-bg::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom,
+          rgba(0, 0, 0, 0.35) 0%,
+          rgba(0, 0, 0, 0.15) 40%,
+          rgba(0, 0, 0, 0.7) 80%,
+          rgba(10, 10, 10, 1) 100%);
+    }
+
+    .header-content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 24px 20px 40px;
+      max-width: 780px;
+    }
+
+    .header-badge {
+      display: inline-block;
+      background: var(--yellow);
+      color: var(--black);
+      font-weight: 900;
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 6px 18px;
+      border-radius: 50px;
+      margin-bottom: 16px;
+    }
+
+    header h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 900;
+      line-height: 1.15;
+      text-shadow: 0 2px 16px rgba(0, 0, 0, 0.8);
+      letter-spacing: -0.01em;
+    }
+
+    header h1 span {
+      color: var(--yellow);
+    }
+
+    header .subtitle {
+      margin-top: 12px;
+      font-size: clamp(0.95rem, 2.5vw, 1.15rem);
+      color: rgba(255, 255, 255, 0.85);
+      font-weight: 400;
+      letter-spacing: 0.04em;
+    }
+
+    /* ─── CALL BUTTON ─── */
+    .call-wrap {
+      background: var(--black);
+      padding: 28px 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .call-wrap iframe {
+      border: none;
+      width: 100%;
+      max-width: 500px;
+      height: 68px;
+      overflow: hidden;
+    }
+
+    /* ─── SECTION BASE ─── */
+    section {
+      padding: 72px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .section-full {
+      max-width: 100%;
+      padding: 72px 0;
+    }
+
+    .section-full .inner {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .section-tag {
+      display: inline-block;
+      background: rgba(255, 204, 0, 0.15);
+      color: var(--yellow);
+      border: 1px solid rgba(255, 204, 0, 0.35);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 50px;
+      margin-bottom: 14px;
+    }
+
+    h2 {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 6px;
+    }
+
+    h2 .de {
+      display: block;
+      font-size: 0.6em;
+      color: rgba(255, 255, 255, 0.45);
+      font-weight: 600;
+      margin-top: 4px;
+      letter-spacing: 0.02em;
+    }
+
+    .divider {
+      width: 56px;
+      height: 4px;
+      background: var(--yellow);
+      border-radius: 2px;
+      margin: 18px 0 28px;
+    }
+
+    /* ─── CARDS ─── */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-top: 32px;
+    }
+
+    .card {
+      background: var(--black-soft);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      transition: border-color var(--transition), transform var(--transition);
+    }
+
+    .card:hover {
+      border-color: rgba(255, 204, 0, 0.4);
+      transform: translateY(-3px);
+    }
+
+    .card-icon {
+      font-size: 2.2rem;
+      margin-bottom: 14px;
+    }
+
+    .card h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: var(--yellow);
+    }
+
+    .card .card-de {
+      font-size: 0.82rem;
+      color: rgba(255, 255, 255, 0.45);
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 0.92rem;
+      color: rgba(255, 255, 255, 0.75);
+    }
+
+    /* ─── ABOUT SECTION ─── */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 32px;
+    }
+
+    @media (max-width: 650px) {
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .about-box {
+      background: var(--black-soft);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+    }
+
+    .about-box .lang-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--yellow);
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .about-box p {
+      font-size: 0.95rem;
+      color: rgba(255, 255, 255, 0.8);
+      line-height: 1.7;
+    }
+
+    .payment-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+      align-items: center;
+    }
+
+    .payment-badge {
+      background: rgba(255, 204, 0, 0.12);
+      border: 1.5px solid rgba(255, 204, 0, 0.4);
+      color: var(--yellow);
+      font-weight: 700;
+      font-size: 0.82rem;
+      padding: 6px 14px;
+      border-radius: 8px;
+      letter-spacing: 0.05em;
+    }
+
+    .whatsapp-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #25D366;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      text-decoration: none;
+      margin-top: 16px;
+      transition: opacity var(--transition);
+    }
+
+    .whatsapp-btn:hover {
+      opacity: 0.85;
+    }
+
+    /* ─── AIRPORT SECTION ─── */
+    .airport-section {
+      background: var(--black-soft);
+    }
+
+    .airport-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    @media (max-width: 720px) {
+      .airport-inner {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .airport-img {
+      border-radius: var(--radius);
+      overflow: hidden;
+      aspect-ratio: 4/3;
+    }
+
+    .airport-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .airport-img:hover img {
+      transform: scale(1.04);
+    }
+
+    .airport-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 24px;
+    }
+
+    .airport-table th {
+      text-align: left;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--yellow);
+      padding: 0 0 10px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .airport-table th:last-child {
+      text-align: right;
+    }
+
+    .airport-table td {
+      padding: 12px 0;
+      font-size: 0.93rem;
+      color: rgba(255, 255, 255, 0.8);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      vertical-align: top;
+    }
+
+    .airport-table td:last-child {
+      text-align: right;
+      color: rgba(255, 255, 255, 0.5);
+      font-style: italic;
+    }
+
+    .airport-table td strong {
+      display: block;
+      color: var(--white);
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+
+    .price-badge {
+      display: inline-block;
+      background: var(--yellow);
+      color: var(--black);
+      font-weight: 900;
+      font-size: 0.72rem;
+      padding: 3px 9px;
+      border-radius: 6px;
+      letter-spacing: 0.04em;
+      margin-top: 4px;
+    }
+
+    /* ─── A2 SECTION ─── */
+    .a2-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-top: 32px;
+    }
+
+    .a2-card {
+      background: var(--black-soft);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-left: 4px solid var(--yellow);
+      border-radius: var(--radius);
+      padding: 22px 20px;
+    }
+
+    .a2-card .a2-icon {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    .a2-card h3 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--yellow);
+      margin-bottom: 4px;
+    }
+
+    .a2-card .a2-de {
+      font-size: 0.78rem;
+      color: rgba(255, 255, 255, 0.4);
+      font-style: italic;
+      margin-bottom: 8px;
+    }
+
+    .a2-card p {
+      font-size: 0.88rem;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .locations-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 28px;
+    }
+
+    .loc-tag {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 0.83rem;
+      padding: 6px 14px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .loc-tag::before {
+      content: '📍';
+      font-size: 0.9em;
+    }
+
+    /* ─── QR SECTION ─── */
+    .qr-section {
+      background: linear-gradient(135deg, var(--yellow) 0%, #ffdb57 100%);
+      color: var(--black);
+    }
+
+    .qr-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .qr-text h2 {
+      color: var(--black);
+    }
+
+    .qr-text h2 .de {
+      color: rgba(0, 0, 0, 0.5);
+    }
+
+    .qr-text p {
+      font-size: 1rem;
+      color: rgba(0, 0, 0, 0.75);
+      max-width: 400px;
+      margin-top: 10px;
+    }
+
+    .qr-img-wrap {
+      background: #fff;
+      border-radius: 16px;
+      padding: 16px;
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+      flex-shrink: 0;
+    }
+
+    .qr-img-wrap img {
+      width: 160px;
+      height: 160px;
+      display: block;
+      object-fit: contain;
+    }
+
+    .qr-star {
+      font-size: 1.5rem;
+      margin-bottom: 8px;
+    }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: var(--black);
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 48px 20px 32px;
+      text-align: center;
+    }
+
+    .footer-logo {
+      font-size: 1.25rem;
+      font-weight: 900;
+      color: var(--yellow);
+      margin-bottom: 6px;
+      letter-spacing: -0.01em;
+    }
+
+    .footer-phone {
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: var(--white);
+      text-decoration: none;
+      display: inline-block;
+      margin: 10px 0;
+      transition: color var(--transition);
+    }
+
+    .footer-phone:hover {
+      color: var(--yellow);
+    }
+
+    .footer-payments {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 20px 0;
+    }
+
+    .pay-icon {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 7px 16px;
+      border-radius: 8px;
+      letter-spacing: 0.04em;
+    }
+
+    .footer-copy {
+      margin-top: 24px;
+      font-size: 0.78rem;
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    /* ─── SECTION SEPARATOR ─── */
+    .sep {
+      height: 1px;
+      background: rgba(255, 255, 255, 0.06);
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 600px) {
+      section {
+        padding: 52px 18px;
+      }
+
+      .qr-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .airport-table th:last-child,
+      .airport-table td:last-child {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    📞 Dostępni 24h / Verfügbar 24h &nbsp;·&nbsp; <a href="tel:+48739159969">+48 739 159 969</a>
+  </div>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-bg" role="img" aria-label="Biała Toyota Camry Taxi Słubice na autostradzie A2"></div>
+    <div class="header-content">
+      <div class="header-badge">🚕 Taxi 24H · Słubice · Świecko · Frankfurt (Oder)</div>
+      <h1>Twoja Taksówka<br /><span>na Granicy</span></h1>
+      <p class="subtitle">Słubice &nbsp;|&nbsp; Świecko &nbsp;|&nbsp; Frankfurt (Oder) &nbsp;|&nbsp; Airport Berlin
+        (BER)</p>
+    </div>
+  </header>
+
+  <!-- CALL BUTTON -->
+  <div class="call-wrap">
+    <iframe id="call-btn" title="Przycisk zamówienia taksówki" srcdoc='
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+          body { margin: 0; overflow: hidden; display: flex; justify-content: center; background: #0a0a0a; }
+          .btn { background:#ffcc00; color:#000; width:100%; max-width:500px; padding:16px 10px;
+                 text-decoration:none; font-family:Arial,sans-serif; font-weight:900; font-size:20px;
+                 border-radius:12px; border:3px solid #000; text-align:center; text-transform:uppercase;
+                 display:block; letter-spacing:0.02em; }
+        </style>
+        <a href="tel:+48739159969" class="btn">📞 ZAMÓW / RUFEN: 739 159 969</a>
+      '></iframe>
+  </div>
+
+  <!-- ABOUT & CONTACT -->
+  <section id="o-nas">
+    <div class="section-tag">O nas / Über uns</div>
+    <h2>
+      Taxi Słubice 24H
+      <span class="de">Ihr Taxi-Service in Slubice &amp; Frankfurt (Oder)</span>
+    </h2>
+    <div class="divider"></div>
+    <div class="about-grid">
+      <div class="about-box">
+        <span class="lang-label">🇵🇱 Polski</span>
+        <p>
+          <strong>Taxi Słubice 24h</strong> to niezawodny partner w podróży. Obsługujemy
+          <strong>Słubice, Świecko (Terminal/Port)</strong> oraz autostradę A2.
+          Jesteśmy dostępni całą dobę, 7 dni w tygodniu.
+          <br /><br />
+          Akceptujemy: <strong>Karta, EUR, PLN, BLIK</strong>.
+          Kontakt również przez <strong>WhatsApp</strong>.
+        </p>
+        <a href="https://wa.me/48739159969" target="_blank" rel="noopener" class="whatsapp-btn">
+          💬 WhatsApp
+        </a>
+      </div>
+      <div class="about-box">
+        <span class="lang-label">🇩🇪 Deutsch</span>
+        <p>
+          <strong>Taxi Słubice 24h</strong> — Ihr zuverlässiger Taxi-Service in Slubice und
+          Frankfurt (Oder). Wir sind <strong>24 Stunden, 7 Tage</strong> die Woche für Sie da.
+          <br /><br />
+          <strong>Wir sprechen Deutsch!</strong> Kontakt auch über WhatsApp möglich.
+          Wir akzeptieren: Karte, EUR, PLN, BLIK.
+        </p>
+        <a href="https://wa.me/48739159969" target="_blank" rel="noopener" class="whatsapp-btn">
+          💬 WhatsApp
+        </a>
+      </div>
+    </div>
+    <div class="payment-row">
+      <span class="payment-badge">💳 Karta / Karte</span>
+      <span class="payment-badge">🪙 PLN</span>
+      <span class="payment-badge">💶 EUR</span>
+      <span class="payment-badge">📱 BLIK</span>
+    </div>
+  </section>
+
+  <div class="sep"></div>
+
+  <!-- AIRPORT TRANSFERS -->
+  <div class="section-full airport-section" id="transfery">
+    <div class="inner">
+      <div class="airport-inner">
+        <div class="airport-img">
+          <img src="taxi_berlin_transfer_1773907477665.png" alt="Taxi Słubice transfer lotnisko Berlin Brandenburg BER"
+            loading="lazy" />
+        </div>
+        <div>
+          <div class="section-tag">Transfery / Transfers</div>
+          <h2>
+            Transfery Lotniskowe
+            <span class="de">Flughafentransfers</span>
+          </h2>
+          <div class="divider"></div>
+          <table class="airport-table">
+            <thead>
+              <tr>
+                <th>Destynacja 🇵🇱</th>
+                <th>Destination 🇩🇪</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <strong>✈️ Lotnisko Berlin (BER)</strong>
+                  Komfortowy odbiór spod terminala.<br />
+                  <span class="price-badge">Stałe ceny</span>
+                </td>
+                <td>
+                  <strong>Flughafen Berlin (BER)</strong>
+                  Bequeme Abholung vom Terminal.<br />
+                  <span class="price-badge">Festpreise</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>✈️ Poznań / Babimost</strong>
+                  Transfer na lotnisko Poznań.<br />
+                  <span class="price-badge">Stałe ceny</span>
+                </td>
+                <td>
+                  <strong>Posen / Babimost</strong>
+                  Transfer zum Flughafen Posen.<br />
+                  <span class="price-badge">Festpreise</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>🚉 Frankfurt (Oder) Hbf</strong>
+                  Dworzec główny &amp; okolice.<br />
+                  <span class="price-badge">24h</span>
+                </td>
+                <td>
+                  <strong>Frankfurt (Oder) Hbf</strong>
+                  Hauptbahnhof &amp; Umgebung.<br />
+                  <span class="price-badge">24h</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- A2 HIGHWAY ASSISTANCE -->
+  <section id="a2">
+    <div class="section-tag">Pomoc drogowa / Pannenhilfe</div>
+    <h2>
+      Pomoc na Autostradzie A2
+      <span class="de">Pannenhilfe auf der Autobahn A2</span>
+    </h2>
+    <div class="divider"></div>
+    <div class="a2-grid">
+      <div class="a2-card">
+        <div class="a2-icon">🔋</div>
+        <h3>Odpalanie z kabli</h3>
+        <div class="a2-de">Starthilfe / Überbrücken</div>
+        <p>
+          Odpalanie z kabli <strong>12V/24V</strong> — PKW &amp; LKW.
+          Szybka pomoc na miejscu wypadku lub poboczu.
+        </p>
+      </div>
+      <div class="a2-card">
+        <div class="a2-icon">⛽</div>
+        <h3>Dowóz paliwa</h3>
+        <div class="a2-de">Kraftstofflieferung</div>
+        <p>
+          Dowóz paliwa na autostradę — <strong>benzyna, diesel</strong>.
+          Nie zostawiamy Cię bez pomocy!
+        </p>
+      </div>
+      <div class="a2-card">
+        <div class="a2-icon">🚗</div>
+        <h3>Transport &amp; Holowanie</h3>
+        <div class="a2-de">Transport &amp; Abschleppen</div>
+        <p>
+          Pomoc z transportem osób i bagażu gdy auto jest wyłączone z ruchu.
+        </p>
+      </div>
+      <div class="a2-card">
+        <div class="a2-icon">🕐</div>
+        <h3>Dostępni 24 godziny</h3>
+        <div class="a2-de">24h verfügbar</div>
+        <p>
+          Całodobowa pomoc, 7 dni w tygodniu, przez cały rok.
+          <strong>Zadzwoń, a przyjedziemy!</strong>
+        </p>
+      </div>
+    </div>
+    <div class="locations-list">
+      <span class="loc-tag">Świecko</span>
+      <span class="loc-tag">Kunowice</span>
+      <span class="loc-tag">Rzepin</span>
+      <span class="loc-tag">Autostrada A2</span>
+      <span class="loc-tag">Autostrada A12</span>
+      <span class="loc-tag">Słubice</span>
+      <span class="loc-tag">Frankfurt (Oder)</span>
+    </div>
+  </section>
+
+  <div class="sep"></div>
+
+  <!-- RATE US / QR -->
+  <div class="section-full qr-section" id="ocen-nas">
+    <div class="inner">
+      <div class="qr-inner">
+        <div class="qr-text">
+          <div class="section-tag" style="background:rgba(0,0,0,0.1); color:#000; border-color:rgba(0,0,0,0.2);">Oceń
+            nas / Bewerte uns</div>
+          <h2 style="color:#000;">
+            Twoja opinia<br />jest dla nas ważna
+            <span class="de" style="color:rgba(0,0,0,0.45);">Deine Bewertung ist uns wichtig</span>
+          </h2>
+          <p>
+            Zeskanuj kod QR i zostaw opinię w Google Reviews.<br />
+            Scan den QR-Code und bewerte uns bei Google.
+          </p>
+          <div class="qr-star">⭐⭐⭐⭐⭐</div>
+        </div>
+        <div class="qr-img-wrap">
+          <a href="https://g.page/r/CSMh6B1Glo8REBM/review" target="_blank" rel="noopener">
+            <img
+              src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https%3A%2F%2Fg.page%2Fr%2FCSMh6B1Glo8REBM%2Freview&margin=4"
+              alt="Kod QR – Oceń Taxi Słubice w Google" width="160" height="160" loading="lazy" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">🚕 Taxi Słubice — Taksówka Słubice 24H</div>
+    <a href="tel:+48739159969" class="footer-phone">+48 739 159 969</a>
+    <div class="footer-payments">
+      <span class="pay-icon">💳 Visa / Mastercard</span>
+      <span class="pay-icon">📱 BLIK</span>
+      <span class="pay-icon">💶 EUR</span>
+      <span class="pay-icon">💵 PLN</span>
+    </div>
+    <div class="footer-copy">
+      &copy; 2025 Taxi Słubice 24H &nbsp;·&nbsp; ul. Wandy 7/7, 69-100 Słubice
+      &nbsp;·&nbsp; Wszystkie prawa zastrzeżone
+    </div>
+  </footer>
+
+</body>
+
+</html>
